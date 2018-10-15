@@ -1,0 +1,111 @@
+/*
+reactivated from 
+https://codepen.io/una/pen/eMaBgX
+
+css
+https://codepen.io/mugiseyebrows/pen/dgVRZP?editors=1100
+
+*/
+
+.mugi-menu button {
+    background: none !important;
+    color: inherit;
+    border: none;
+    /*padding:0!important;*/
+    font: inherit;
+    
+    /*border is optional*/
+    /*border-bottom:1px solid #444; */
+    cursor: pointer;
+    position: relative;
+}
+
+ul.mugi-menu,
+ul.mugi-menu ul {
+    /*background: darkorange;*/
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.mugi-menu li {
+    /*color: #fff;*/
+    background: #fff;
+    /*background: darkorange;*/
+    display: block;
+    float: left;
+    /*padding: 1rem;*/
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.1s;
+}
+
+.mugi-menu li:hover {
+    /*background: red;*/
+    /*cursor: pointer;*/
+    background: #eee;
+}
+
+.mugi-menu li ul {
+    /*background: orange;*/
+    visibility: hidden;
+    opacity: 0;
+    /*min-width: 5rem;*/
+    position: absolute;
+    transition: all 0.5s ease;
+    /*margin-top: 1rem;*/
+    left: 0;
+    display: none;
+}
+
+.mugi-menu li:hover>ul,
+.mugi-menu li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+.mugi-menu li ul li {
+    clear: both;
+    width: 100%;
+    /*font-weight: bold;*/
+}
+
+.mugi-menu .with-icon .caption {
+    margin-left: 15px;
+}
+
+.mugi-menu .with-icon.without-caption .caption {
+    margin-left: 14px;
+}
+
+.clear-both {
+    clear: both;
+}
+
+/* copy and override */
+
+.mugi-menu li ul button {
+    width: 5rem !important;
+    cursor: pointer;
+}
+
+.mugi-menu li ul li ul {
+    position: absolute;
+    left: 5rem;
+    top: 0px;
+}
+
+.mugi-menu button { 
+    padding: 0.3rem !important;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.mugi-menu .with-icon img {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
