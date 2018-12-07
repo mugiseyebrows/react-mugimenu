@@ -25,12 +25,12 @@ class MugiMenu extends Component {
             
             if (item.icon) {
                 var icon = <img src={item.icon} />
-                var caption = <span class="caption">{item.caption}</span>
+                var caption = <span className="caption">{item.caption}</span>
                 let classNames_ = classNames({'with-icon':true,'without-caption':item.caption == null})
                 return <li key={i}><button className={classNames_} onClick={onClick}>{icon}&nbsp;{caption}</button>{children}</li>
             }
 
-            var caption = <span class="caption">{item.caption ? item.caption : item.name}</span>
+            var caption = <span className="caption">{item.caption ? item.caption : item.name}</span>
             return <li key={i}><button onClick={onClick}> {caption}</button>{children}</li>
         }
         console.log(item,i)
