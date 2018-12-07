@@ -76,7 +76,7 @@ var MugiMenu = function (_Component) {
                     var icon = _react2.default.createElement('img', { src: item.icon });
                     var caption = _react2.default.createElement(
                         'span',
-                        { 'class': 'caption' },
+                        { className: 'caption' },
                         item.caption
                     );
                     var classNames_ = (0, _classnames2.default)({ 'with-icon': true, 'without-caption': item.caption == null });
@@ -96,7 +96,7 @@ var MugiMenu = function (_Component) {
 
                 var caption = _react2.default.createElement(
                     'span',
-                    { 'class': 'caption' },
+                    { className: 'caption' },
                     item.caption ? item.caption : item.name
                 );
                 return _react2.default.createElement(
